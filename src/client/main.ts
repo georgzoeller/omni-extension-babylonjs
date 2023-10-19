@@ -1,6 +1,6 @@
 //@ts-ignore
-import {OmniSDKClient, OmniSDKClientEvents} from 'omni-sdk';
-const sdk = new OmniSDKClient("omni-extension-babylonjs").init();
+import {OmniSDKClient, OmniSDKClientEvents, OmniSDKHostMessages} from 'omni-sdk';
+const sdk = new OmniSDKClient("omni-extension-babylonjs").init({subscriptions: [OmniSDKHostMessages.CUSTOM_EVENT]});
 import './reset.css'
 import './style.css'
 //@ts-ignore
